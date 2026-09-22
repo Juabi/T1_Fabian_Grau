@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package t1;
-
+import java.util.Scanner;
 /**
  *
  * @author Fabia
@@ -14,7 +14,11 @@ public class T1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        Alumno a = new Alumno();
+        System.out.println("Ingrese el Nombre completo del Estudiante");
+        a.setNombreCompleto(sc.nextLine());
+        a.verAlumno();
     }
     
 }

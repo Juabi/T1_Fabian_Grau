@@ -58,10 +58,10 @@ public class Alumno {
     void verAlumno()
     {
         System.out.println("Alumno: Nombre: "+ this.nombreCompleto+ 
-                "Dni:" + this.dni+
-                "Residencia Temporal: "+this.residenciaTemporal +
-                "Nivel Socioeconomico" + this.nivelSocioeconomico+
-                "Beca:"+this.tipoBeca);
+                " Dni: " + this.dni+
+                " Residencia Temporal: "+this.residenciaTemporal +
+                " Nivel Socioeconomico: " + this.nivelSocioeconomico+
+                " Beca: "+this.tipoBeca);
     }
 }
 
