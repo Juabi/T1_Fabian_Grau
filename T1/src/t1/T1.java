@@ -20,6 +20,10 @@ public class T1 {
         a.setNombreCompleto(sc.nextLine());
         System.out.println("Ingrese el Dni del Estudiante");
         a.setDni(sc.nextLine());
+        System.out.println("Ingrese el código de residencia temporal del Estudiante");
+        a.setResidenciaTemporal(sc.nextLine());
+        System.out.println("Ingrese el nivel socioeconomico del Estudiante [A/B/C]");
+        a.setNivelSocioeconomico(sc.nextLine().charAt(0));
         
         
         a.verAlumno();

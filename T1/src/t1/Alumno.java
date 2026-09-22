@@ -45,7 +45,7 @@ public class Alumno {
     public void setResidenciaTemporal(String residenciaTemporal) {
         if(residenciaTemporal.length()==11)
         {
-            this.residenciaTemporal= dni;
+            this.residenciaTemporal= residenciaTemporal;
         }
         else
         {
@@ -58,7 +58,23 @@ public class Alumno {
     }
 
     public void setNivelSocioeconomico(char nivelSocioeconomico) {
-        this.nivelSocioeconomico = nivelSocioeconomico;
+        if (nivelSocioeconomico == 'A')
+        {
+            this.nivelSocioeconomico = nivelSocioeconomico;
+        }
+        else if (nivelSocioeconomico == 'B')
+        {
+            this.nivelSocioeconomico = nivelSocioeconomico;
+        }
+        else if (nivelSocioeconomico == 'C')
+        {
+            this.nivelSocioeconomico = nivelSocioeconomico;
+        }
+        else
+        {
+            System.out.println("Solo debe elegir una lentra (A/B/C)");
+        }
+        
     }
 
     public char getTipoBeca() {
@@ -74,7 +90,7 @@ public class Alumno {
         System.out.println("Alumno: Nombre: "+ this.nombreCompleto+ 
                 " Dni: " + this.dni+
                 " Residencia Temporal: "+this.residenciaTemporal +
-                " Nivel Socioeconomico: " + this.nivelSocioeconomico+
+                " Nivel Socioeconomico: Nivel " + this.nivelSocioeconomico+
                 " Beca: "+this.tipoBeca);
     }
 }
