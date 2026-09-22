@@ -72,7 +72,7 @@ public class Alumno {
         }
         else
         {
-            System.out.println("Solo debe elegir una lentra (A/B/C)");
+            System.out.println("Solo debe elegir una lentra en mayusculas (A/B/C)");
         }
         
     }
@@ -93,6 +93,10 @@ public class Alumno {
         else if (tipoBeca == 'N')
         {
             this.tipoBeca= tipoBeca;
+        }
+        else
+        {
+            System.out.println("Solo debe elegir una lentra en mayusculas (C/M/N)");
         }
         
     }

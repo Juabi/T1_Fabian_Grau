@@ -16,19 +16,40 @@ public class T1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Alumno a = new Alumno();
-        System.out.println("Ingrese el Nombre completo del Estudiante");
-        a.setNombreCompleto(sc.nextLine());
-        System.out.println("Ingrese el Dni del Estudiante");
+        AlumnoControler controla = new AlumnoControler();
+        String rpta="si";
+        while(rpta.equals("si"))
+                {
+                    while (a.getDni() == null)
+                    {
+                        System.out.println("Ingrese el Dni del Estudiante");
         a.setDni(sc.nextLine());
-        System.out.println("Ingrese el código de residencia temporal del Estudiante");
-        a.setResidenciaTemporal(sc.nextLine());
+                    }
+                    while (a.getResidenciaTemporal() == null)
+                    {
+                        System.out.println("Ingrese el código de residencia temporal del Estudiante");
+                        a.setResidenciaTemporal(sc.nextLine());
+                    }
+                    while (a.getNivelSocioeconomico() == '\0')
+                    {
+                        
         System.out.println("Ingrese el nivel socioeconomico del Estudiante [A/B/C]");
         a.setNivelSocioeconomico(sc.nextLine().charAt(0));
+                    }
+                    while (a.getTipoBeca() == '\0')
+                    {
+                        
         System.out.println("Cuenta con beca? Beca Completa: C; Media Beca: M; No cuenta: N");
         a.setTipoBeca(sc.nextLine().charAt(0));
+                    }
+                    controla.agregarAlumno(a);
+System.out.println("Desea ingresar otro asistente: si/no");
+rpta=sc.nextLine();
+System.out.println(rpta);
+                }
         
+        controla.listaAlumno();
         
-        a.verAlumno();
     }
     
 }
