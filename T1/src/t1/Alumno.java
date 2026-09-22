@@ -28,7 +28,14 @@ public class Alumno {
     }
 
     public void setDni(String dni) {
-        this.dni = dni;
+        if(dni.length()==8)
+        {
+            this.dni= dni;
+        }
+        else
+        {
+            System.out.println("El DNI debe tener 8 dígitos");
+        }
     }
 
     public String getResidenciaTemporal() {
@@ -36,7 +43,14 @@ public class Alumno {
     }
 
     public void setResidenciaTemporal(String residenciaTemporal) {
-        this.residenciaTemporal = residenciaTemporal;
+        if(residenciaTemporal.length()==11)
+        {
+            this.residenciaTemporal= dni;
+        }
+        else
+        {
+            System.out.println("El código de residencia temporal debe tener 11 dígitos");
+        }
     }
 
     public char getNivelSocioeconomico() {

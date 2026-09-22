@@ -18,6 +18,10 @@ public class T1 {
         Alumno a = new Alumno();
         System.out.println("Ingrese el Nombre completo del Estudiante");
         a.setNombreCompleto(sc.nextLine());
+        System.out.println("Ingrese el Dni del Estudiante");
+        a.setDni(sc.nextLine());
+        
+        
         a.verAlumno();
     }
     
