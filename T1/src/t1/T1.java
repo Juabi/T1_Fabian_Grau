@@ -24,6 +24,8 @@ public class T1 {
         a.setResidenciaTemporal(sc.nextLine());
         System.out.println("Ingrese el nivel socioeconomico del Estudiante [A/B/C]");
         a.setNivelSocioeconomico(sc.nextLine().charAt(0));
+        System.out.println("Cuenta con beca? Beca Completa: C; Media Beca: M; No cuenta: N");
+        a.setTipoBeca(sc.nextLine().charAt(0));
         
         
         a.verAlumno();

@@ -82,7 +82,19 @@ public class Alumno {
     }
 
     public void setTipoBeca(char tipoBeca) {
-        this.tipoBeca = tipoBeca;
+        if(tipoBeca=='C')
+        {
+            this.tipoBeca = tipoBeca;
+        }
+        else if (tipoBeca == 'M')
+        {
+            this.tipoBeca= tipoBeca;
+        }
+        else if (tipoBeca == 'N')
+        {
+            this.tipoBeca= tipoBeca;
+        }
+        
     }
     
     void verAlumno()
